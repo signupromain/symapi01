@@ -1,3 +1,9 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+# index => nom du chemin
+#    path: / => chemin et variables get
+#    controller: App\Controller\DefaultController::index => namespace\nomfichier
+notreAccueil:
+    path: /
+    controller: App\Controller\IndexController::Accueil
+pageDeux:
+    path: /deux
+    controller: App\Controller\IndexController::Deux
