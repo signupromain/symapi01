@@ -8,6 +8,7 @@ namespace App\Controller;
 // pour envoyer une réponse http
 use Symfony\Component\HttpFoundation\Response;
 
+
 // nom de la classe comme le nom de fichier
 class IndexController
 {
