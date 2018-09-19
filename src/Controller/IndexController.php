@@ -13,13 +13,13 @@ use Symfony\Component\HttpFoundation\Response;
 class IndexController
 {
     // nom de la méthode
-    public function Accueil()
+    public function accueilAction()
     {
         // réponse http en dur
-        return new Response("<html><body><h1>Hello world!</h1><a href='/deux'>Page 2</a></body></html>");
+        return new Response("<html><body><h1>Hello world!</h1><a href='/deux'>Page 2</a> | <a href='/twig'>première page TWIG</a></body></html>");
     }
     // nom de la méthode
-    public function Deux()
+    public function deuxAction()
     {
         // réponse http en dur
         return new Response("<html><body><h1>page 2</h1><a href='/'>Retour à l'accueil</a></body></html>");

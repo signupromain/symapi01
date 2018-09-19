@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    {% block stylesheets %}{% endblock %}
+</head>
+<body>
+{% block h1 %}<h1>hello world</h1>{% endblock %}
+{% block body %}
+<nav>{% block menu %}<ul><li>rien</li></ul>{% endblock %}</nav>
+    <div class="hello">
+        <p>Ici du contenu!</p>
+    </div>
+{% endblock %}
+{% block javascripts %}{% endblock %}
+</body>
 </html>

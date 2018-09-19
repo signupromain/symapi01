@@ -1,0 +1,17 @@
+{#ceci est un commentaire
+on va étendre la vue depuis la base.html.twig
+#}
+
+{% extends  "base.html.twig" %}
+{% block title %}Soleil{% endblock %}
+
+{% block h1 %}{{ parent() }}<h2>sous titre</h2>{% endblock %}
+
+{% block menu %}{{ parent() }}
+    <ul>
+        <li><a href="{{path("notreAccueil")}}">accueil</a></li>
+        <li><a href="{{path("pageDeux")}}">page 2</a></li>
+        <li><a href="">première page twig</a></li>
+    </ul>
+
+{% endblock %}
